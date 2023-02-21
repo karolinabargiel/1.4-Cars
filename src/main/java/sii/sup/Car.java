@@ -28,10 +28,6 @@ public class Car {
         return market;
     }
 
-    public String getSegment() {
-        return segment;
-    }
-
     public List<Dimension> getDimensions() {
         return dimensions;
     }
@@ -57,17 +53,17 @@ public class Car {
     }
 
     public static void filterCars(List<Car> cars, String producent, boolean isAutomated, int trunkCapacity) {
-        for (Car c : cars) {
-            Market market = c.getMarket();
-            Producent prod = c.getProducent();
-            boolean isAuto = c.isAutomaticGear();
-            if (!isDimensionMoreThanParam(c, trunkCapacity)) {
+        for (Car car : cars) {
+            Market market = car.getMarket();
+            Producent prod = car.getProducent();
+            boolean isAuto = car.isAutomaticGear();
+            if (!isDimensionMoreThanParam(car, trunkCapacity)) {
                 continue;
             }
 
             for (Country country : market.getCountries()) {
                 if (producent.equals(prod.getModel()) && isAutomated == isAuto) {
-                    System.out.println(prod);
+                    System.out.print(prod);
                     System.out.println(country);
                 }
             }

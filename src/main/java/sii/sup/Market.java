@@ -17,10 +17,6 @@ public class Market {
         countries.add(country);
     }
 
-    public String getName() {
-        return name;
-    }
-
 
     public List<Country> getCountries() {
         return countries;

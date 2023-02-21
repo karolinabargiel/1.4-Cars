@@ -21,7 +21,7 @@ public class Main {
         market1.addCountryToMarket(korea);
         market2.addCountryToMarket(slovakia);
         market2.addCountryToMarket(czech);
-        market2.addCountryToMarket(poland);
+        market2.addCountryToMarket(korea);
         market3.addCountryToMarket(slovakia);
         market3.addCountryToMarket(germany);
         market3.addCountryToMarket(poland);
@@ -54,6 +54,7 @@ public class Main {
         dimensions.add(dimension9);
         dimensions.add(dimension10);
         dimensions2.add(dimension1);
+        dimensions2.add(dimension2);
         Producent producent1 = new Producent("BMW", "M2");
         Producent producent2 = new Producent("BMW", "M3");
         Producent producent3 = new Producent("Toyota", "Corolla");
@@ -65,18 +66,18 @@ public class Main {
         Producent producent9 = new Producent("Audi", "Q7");
         Producent producent10 = new Producent("Audi", "A6");
         Car car1 = new Car(producent1, false, market1, "standard", dimensions2);
-        Car car2 = new Car(producent2, true, market2, "medium", dimensions);
+        Car car2 = new Car(producent2, true, market2, "premium", dimensions);
         Car car3 = new Car(producent3, false, market3, "standard", dimensions);
         Car car4 = new Car(producent4, true, market4, "standard", dimensions);
         Car car5 = new Car(producent5, true, market5, "medium", dimensions);
         Car car6 = new Car(producent6, false, market1, "premium", dimensions);
-        Car car7 = new Car(producent7, true, market2, "standard", dimensions);
+        Car car7 = new Car(producent7, true, market2, "premium", dimensions);
         Car car8 = new Car(producent8, true, market3, "standard", dimensions);
         Car car9 = new Car(producent9, false, market4, "standard", dimensions);
         Car car10 = new Car(producent10, true, market5, "medium", dimensions);
         Car car11 = new Car(producent1, true, market3, "standard", dimensions);
         Car car12 = new Car(producent2, false, market5, "standard", dimensions2);
-        Car car13 = new Car(producent3, true, market3, "premium", dimensions);
+        Car car13 = new Car(producent3, true, market3, "medium", dimensions);
         Car car14 = new Car(producent4, false, market5, "standard", dimensions);
         Car car15 = new Car(producent5, true, market1, "standard", dimensions2);
         List<Car> cars = List.of(car1, car2, car3, car4, car5, car6, car7, car8, car9, car10, car11,
